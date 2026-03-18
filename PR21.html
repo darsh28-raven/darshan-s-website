@@ -1,49 +1,58 @@
 ﻿<html>
 <head>
-    <title>WPD_PR21</title>
+    <title>WPD PR_21</title>
 </head>
-<body style="background-image: url(bk.jpg); background-repeat: no-repeat;" >
-     <h1><center>WEB PAGE DESINING</center></h1>
-     <hr>
-     <h2>Text input Fields</h2>
-    <form>
-        <p>First Name</p>
-    
-        
-        <input style="background-color: beige;" type="text" id="fname" name="fname"
-         value="Darshan"><br>
-         <p>Last Name</p>
-         <input style="background-color:beige;" type="text" id="lname"
-         name="lname" value="Pangavhane">
-         <h2>Radio Button</h2>
-         <p>Favourite Subject</p>
-         <form>
-            <input type="radio" id="WPD" name="fav_Game" value="WPD">
-            <label for="WPD">WPD</label><br>
-            <input type="radio" id="AMS" name="fav_Game" value="AMS">
-            <label for="AMS">AMS</label><br>
-            <input type="radio" id="BEE" name="fav_Game" value="BEE">
-            <label for="BEE">BEE</label>
+<body background="q.webp">
+    <center>
+        <table border="2" width="75%" bgcolor="white" cellpadding="10">
+            <tr>
+                <td>
+ <h1 align="center">INFORMATION FORM</h1>
+                       
+         <h2 style="color:darkgreen">HTML FORMS</h2>
+         <form action="/action_page.php">
+             <label for="fname">First Name</label><br>
+             <input type="text" id="fname" name="fname" value="Darshan"><br>
+             <label for="lname">Last name:</label><br>
+             <input type="text" id="lname" name="lname" value="pangavhane"><br>
+
+             <h2 style="color:darkgreen">Radio Buttons</h2>
+             <p>Choose your favorite City:</p>
+
+             <input type="radio" id="mumbai" name="fav_city" value="Mumbai">
+             <label for="mumbai">Mumbai</label><br>
+             <input type="radio" id="delhi" name="fav_city" value="Delhi">
+             <label for="delhi">Delhi</label><br>
+             <input type="radio" id="kerla" name="fav_city" value="Kerla">
+             <label for="kerla">Kerla</label>
+
+             <h2 style="color:darkgreen">Checkboxes</h2>
+
+             <p>The <b>input type="checkbox"</b>defines a checkbox:</p>
+             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+             <img src="bike.avif" width="30" height="20"></img>
+             <label for="vehicle1"> I have a bike</label><br>
+             <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+             <img src="car.avif" width="30" height="20">
+             <label for="vehicle2"> I have a car</label><br>
+             <input type="checkbox" id="vehicle3" name="vehicle3" value="Helicopter">
+             <img src="helicopter.png" width="30" height="20">
+             <label for="vehicle3"> I have a helicopter</label><br>
+             <input type="submit" value="submit">
+
          </form>
-         <h2>Chekboxes</h2>
-         <P>The <strong>input type="Chekboxes"</strong> difine a chekboxes</P>
-         <form>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehical">I Have A Bike</label><br>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
-            <label for="vehical">I Have A car</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="boat">
-            <label for="vehical">I Have A boat</label><br>
-         </form>
-     </form>
-    <h2>Contact Information</h2>
-    <p><b><u>NAME</u>:</b>Darshan Pangavhane</p>
+    <p>If you click the "submit" button, the form-data will be sent to a page called <br />"/action_page.php"</p></center>
+
+    <h2>CONTACT INFORMATION</h2>
     <address>
-        MET'S INTITUTE OF TECHNOLOGY-POLYTECHNIC<br />
-        DEPARTMENT OF INFORMATION TECHNOLOGY<br />
-        EMAIL:2025ictdarshan2417@gmail.com<br />
-        PHONE NO:8767414498<br />
-        Adgaon,<br />Nashik<br />Maharashtra<br />
+        TOPIC   :PRACTICAL 21<br />
+        NAME    :Darshan Kishor Pangavhane <br />
+        COLLEGE : MET BHUJBAL KNOWLEDGE CITY <br />
+        BRANCH  :FYIF <br />
+        ROLL NO.:46 <br />
+        SUBJECT :WPD <br />
+        Email   :2025ictdarshan2417@gmail.com
     </address>
+
 </body>
 </html>
