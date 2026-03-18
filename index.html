@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>WPD PRACTICALS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f4f8;
+        }
+
+        /* Header */
+        header {
+            padding: 25px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            color: #3a3a3a;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding-bottom: 20px;
+        }
+
+            nav a {
+                text-decoration: none;
+                color: #555;
+                font-weight: 600;
+                font-size: 16px;
+                position: relative;
+            }
+
+                nav a::after {
+                    content: "";
+                    position: absolute;
+                    width: 0%;
+                    height: 3px;
+                    background: #888;
+                    left: 0;
+                    bottom: -6px;
+                    transition: 0.3s;
+                }
+
+                nav a:hover::after {
+                    width: 100%;
+                }
+
+        /* Grid */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            padding: 35px;
+        }
+
+        /* Glass Cards */
+        .box {
+            backdrop-filter: blur(8px);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            background-color: #a8dadc;
+            color: #1d3557;
+            font-weight: 600;
+        }
+
+            .box:hover {
+                transform: translateY(-6px) scale(1.03);
+                box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+            }
+
+            .box h3 {
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+
+        /* Button Group */
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            background: #457b9d;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+            .btn:hover {
+                background: #1d3557;
+                transform: scale(1.05);
+                letter-spacing: 1px;
+            }
+
+        .output-btn {
+            background: #f77f00;
+        }
+
+            .output-btn:hover {
+                background: #d65a00;
+            }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+                gap: 15px;
+            }
+        }
+
+        /* About Section */
+        #about {
+            padding: 50px;
+            text-align: center;
+            color: #1d3557;
+            background: #f0f4f8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>MSBTE WPD PRACTICALS</header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="Standard Format.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- 22 Practical Cards with View and Output buttons -->
+        <div class="box">
+            <h3>Practical 1</h3>
+            <div class="btn-group">
+                <a href="PR1.html" target="_blank" class="btn">View</a>
+                <a href="PR1.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 2</h3>
+            <div class="btn-group">
+                <a href="PR2.html" target="_blank" class="btn">View</a>
+                <a href="PR2.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 3</h3>
+            <div class="btn-group">
+                <a href="PR3.html" target="_blank" class="btn">View</a>
+                <a href="PR3.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 4</h3>
+            <div class="btn-group">
+                <a href="PR4.html" target="_blank" class="btn">View</a>
+                <a href="PR4.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 5</h3>
+            <div class="btn-group">
+                <a href="PR5.html" target="_blank" class="btn">View</a>
+                <a href="PR5.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 6</h3>
+            <div class="btn-group">
+                <a href="PR6.html" target="_blank" class="btn">View</a>
+                <a href="PR6.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 7</h3>
+            <div class="btn-group">
+                <a href="PR7.html" target="_blank" class="btn">View</a>
+                <a href="PR7.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 8</h3>
+            <div class="btn-group">
+                <a href="PR8.html" target="_blank" class="btn">View</a>
+                <a href="PR8.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 9</h3>
+            <div class="btn-group">
+                <a href="PR9.html" target="_blank" class="btn">View</a>
+                <a href="PR9.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 10</h3>
+            <div class="btn-group">
+                <a href="PR10.html" target="_blank" class="btn">View</a>
+                <a href="PR10.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 11</h3>
+            <div class="btn-group">
+                <a href="PR11.html" target="_blank" class="btn">View</a>
+                <a href="PR11.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 12</h3>
+            <div class="btn-group">
+                <a href="PR12.html" target="_blank" class="btn">View</a>
+                <a href="PR12.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 13</h3>
+            <div class="btn-group">
+                <a href="PR13.html" target="_blank" class="btn">View</a>
+                <a href="PR13.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 14</h3>
+            <div class="btn-group">
+                <a href="PR14.html" target="_blank" class="btn">View</a>
+                <a href="PR14.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 15</h3>
+            <div class="btn-group">
+                <a href="PR15.html" target="_blank" class="btn">View</a>
+                <a href="PR15.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 16</h3>
+            <div class="btn-group">
+                <a href="PR16.html" target="_blank" class="btn">View</a>
+                <a href="PR16.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 17</h3>
+            <div class="btn-group">
+                <a href="PR17.html" target="_blank" class="btn">View</a>
+                <a href="PR17.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 18</h3>
+            <div class="btn-group">
+                <a href="PR18.html" target="_blank" class="btn">View</a>
+                <a href="PR18.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 19</h3>
+            <div class="btn-group">
+                <a href="PR19.html" target="_blank" class="btn">View</a>
+                <a href="PR19.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 20</h3>
+            <div class="btn-group">
+                <a href="PR20.html" target="_blank" class="btn">View</a>
+                <a href="PR20.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 21</h3>
+            <div class="btn-group">
+                <a href="PR21.html" target="_blank" class="btn">View</a>
+                <a href="PR21.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 22</h3>
+            <div class="btn-group">
+                <a href="PR22.html" target="_blank" class="btn">View</a>
+                <a href="PR22.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Practical 23</h3>
+            <div class="btn-group">
+                <a href="PR23.html" target="_blank" class="btn">View</a>
+                <a href="PR23.png" target="_blank" class="btn output-btn">Output</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <h2>About</h2>
+        <p>This page contains all 22 practical exercises for Web Programming Development (WPD).</p>
+    </div>
+
+</body>
+</html>
